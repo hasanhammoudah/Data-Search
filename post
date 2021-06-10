@@ -1,0 +1,33 @@
+--
+-- Table structure for table `post`
+--
+
+CREATE TABLE `post` (
+  `id` mediumint(8) UNSIGNED NOT NULL,
+  `post_title` text,
+  `post_description` text,
+  `author` varchar(255) DEFAULT NULL,
+  `datetime` datetime DEFAULT NULL,
+  `post_image` varchar(150) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `post`
+--
+ALTER TABLE `post`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `post`
+--
+ALTER TABLE `post`
+  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+
